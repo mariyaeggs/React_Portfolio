@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import ListContacts from './ListContacts'
+
 const contacts = [
   {
     "id": "mariya",
@@ -25,3 +27,15 @@ const contacts = [
     "avatarURL": "http://localhost:5001/irina.jpg"
   }
 ]
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <ListContacts contacts={contacts} />
+      </div>
+    )
+  }
+}
+
+export default App;
